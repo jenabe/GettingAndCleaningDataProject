@@ -1,7 +1,7 @@
 # GettingAndCleaningDataProject
 Run_Analysis.R R-script on Human Activity Recognition Using Smartphones Dataset
 
-#The original dataset included the following data files:
+#The source dataset included the following files:
 
 'features.txt': List of all features.
 
