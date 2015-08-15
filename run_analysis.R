@@ -45,6 +45,8 @@ meanstddata<-fulldata[,c("subject_id","activity_id",names(fulldata[,meancolumns]
 
 ##add the descriptive activity names to the dataset
 tidydata<-inner_join(meanstddata,activitylabels,by="activity_id")
+tidydata<-tidydata[,c(1,89,3:88)]
 
-##create second tidy data set with the average of each variable for each activity/subject
-tidydatatoo <- tidydata %>% group_by(activity_id,subject_id) %>% summarise_each(funs(mean))
+##create second tidy data set with the average of each variable for each activity/subject and save it to a txt file
+tidydatatoo <- tidydata %>% group_by(activity_name,subject_id) %>% summarise_each(funs(mean))
+write.table(tidydatatoo,"TidyData.txt", row.names = FALSE)
