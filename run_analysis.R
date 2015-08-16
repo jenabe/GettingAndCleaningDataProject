@@ -3,7 +3,6 @@ download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 unzip('smartlab.zip')
 
 ##Open the required libraries. Assumes from the markdown codebook that user have these installed
-library(reshape2)
 library(dplyr)
 
 ##get the activity labels
