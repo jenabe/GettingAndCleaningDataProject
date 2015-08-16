@@ -1,7 +1,7 @@
 # GettingAndCleaningDataProject
 Run_Analysis.R R-script on Human Activity Recognition Using Smartphones Dataset
 
-#Description
+##Description
 The purpose of this project is to demonstrate the ability to collect, work with and clean a data set - preparing tidy data that can be used for later analysis.
 
 The data used is from the "Human Activity Recognition Using Smartphones Dataset Version 1.0" dataset, which contains the results of experiments carried out with a group of 
@@ -15,7 +15,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The txt file produced by the R script created for the project is a tidy data version containing the mean of each variable containing a measurement on the mean and standard deviation by activity and subject, 
 with descriptive activity and variable names.
 
-#The source dataset included the following files:
+##The source dataset included the following files:
 
 'features.txt': List of all features.
 
@@ -33,7 +33,7 @@ with descriptive activity and variable names.
 
 'test/subject_test.txt': ID's of subjects in the training data
 
-#Summary of the run_Analysis.R Script
+##Summary of the run_Analysis.R Script
 
 Step 1: Downloads and unzips the data sourced from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to the working directory
 
