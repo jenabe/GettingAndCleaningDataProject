@@ -42,9 +42,19 @@ fBodyGyroMag
 
 fBodyGyroJerkMag
 
-
 These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. Additional vectors obtained by averaging the signals in a signal window sample(used on the angle() variable):
+
+
+gravityMean
+
+tBodyAccMean
+
+tBodyAccJerkMean
+
+tBodyGyroMean
+
+tBodyGyroJerkMean
 
 
 Derived variables calculated/estimated from these signals: 
@@ -57,21 +67,8 @@ activity_name: Descriptive name of each subject's activity Type (WALKING, WALKIN
 
 subject_id : Identifier for subject Type (Integer Values: 1:30)
 
-angle(): Angle between to vectors.
+angle(): Angle between to vectors (number).
 
-
-Additional vectors obtained by averaging the signals in a signal window sample(used on the angle() variable):
-
-
-gravityMean
-
-tBodyAccMean
-
-tBodyAccJerkMean
-
-tBodyGyroMean
-
-tBodyGyroJerkMean
 
 
 Please see the 'features.txt' and 'features_info.txt' files included in the source dataset downloaded by the run_Analysis.R script for further 
