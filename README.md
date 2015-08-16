@@ -36,11 +36,19 @@ with descriptive activity and variable names.
 #Summary of the run_Analysis.R Script
 
 Step 1: Downloads and unzips the data sourced from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to the working directory
+
 Step 2: Opens the required library (DPLYR). This is a required package and should be installed prior to run
+
 Step 3: Loads the activity labels, column names and test and train data into working data tables and labels the test and train variables appropriately
+
 Step 4: Loads the test and train subject_ids and activity_ids and uses cbind() to merge the data with the related subject and activity ids columns
+
 Step 5: Uses rbind() to merge the test and train data tables to form a full data set
+
 Step 6: Removes all variables not related to standard and mean derivations (grep() on 'mean' and 'std')
+
 Step 7: Using an inner_join(dplyr) on activity_id, adds the descriptive activity names to the data table and removes the activity_id
+
 Step 8: Creates and exports to file the tidy data set containing the mean of the variables grouped by activity and subject
+
 
